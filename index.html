@@ -8,8 +8,7 @@
      <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://api.fontshare.com/v2/css?f[]=clash-display@600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +16,7 @@
     <link rel="stylesheet" href="path/to/your/tailwind.css">
 </head>
 <body class="font-['Poppins']">
-    <div class="flex flex-col md:px-10 px-3 justify-evenly items-center">
+    <div class="bg-[#E5E8EC] flex flex-col md:px-10 px-3 justify-evenly items-center">
       <nav class="relative px-4 py-2 flex justify-between xl:w-[1228px] w-full xl:items-center md:items-center md:m-4 mt-10">
       <div class="flex items-center justify-evenly">
 		<a href="./index.html">
@@ -33,7 +32,7 @@
                     <span class="ripple-content relative z-10">Home</span>
                 </a> -->
 
-                <a href="#" class="ripple-btn relative overflow-hidden flex items-center lg:text-base lg:font-medium hover:text-[#2D6CDF] active:scale-95 transition-colors duration-500 ease-in-out hover:font-medium hover:bg-blue-100 py-2 px-6 rounded-[2px] text-[#475569]">
+                <a href="#" class="ripple-btn relative overflow-hidden flex items-center lg:text-base lg:font-medium hover:text-[#2D6CDF] active:scale-95 transition-colors duration-500 ease-in-out hover:font-medium hover:bg-[#2D6CDF]/10 hover:shadow-md py-2 px-6 rounded-[2px] text-[#475569]">
                     <span class="ripple-content relative z-10">Home</span>
                 </a>
                 
@@ -96,13 +95,13 @@
                     <a class="block p-4 text-basee text-indigo-950 hover:font-semibold hover:font-semibold hover:text-[#407DBD] rounded" href="#">Home</a>
                 </li>
                 <li class="mb-1">
-                    <a class="block p-4 text-basee text-indigo-950 hover:font-semibold text-[#35BBB3] rounded" href="#about">About</a>
+                    <a class="block p-4 text-basee text-indigo-950 hover:font-semibold hover:font-semibold hover:text-[#407DBD] rounded" href="#about">About</a>
                 </li>
                 <li class="mb-1">
                     <a class="block p-4 text-basee text-indigo-950 hover:font-semibold hover:font-semibold hover:text-[#407DBD] rounded" href="#services">Services</a>
                 </li>
                 <li class="mb-1">
-                    <a class="block p-4 text-basee text-indigo-950 hover:font-semibold hover:font-semibold hover:text-[#407DBD] rounded" href="#faq">Faq's</a>
+                    <a class="block p-4 text-basee text-indigo-950 hover:font-semibold hover:font-semibold hover:text-[#407DBD] rounded" href="#">Projects</a>
                 </li>
             </ul>
 		</div>
@@ -115,32 +114,54 @@
 	</div>
 </section>
 
-<section class="hero max-w-7xl mx-auto py-12 md:px-8">
+<section class="bg-[#E5E8EC]">
+    <section class="hero max-w-7xl mx-auto py-6 md:py-4 md:px-10">
       <div class="flex md:flex-row flex-col md:items-center justify-between">
-         <div class="flex flex-col md:gap-y-10 md:px-0 gap-y-5 px-4">
-            <div class="gap-y-4 flex gap-y-2 flex-col">
-                <h1 class="lg:text-4xl text-xl lg:w-[600px] md:w-[300px] w-[300px] md:leading-loose font-['rajdhani'] text-[#184C88] font-bold">
-                    Empowering Telecom Infrastructure <br/> 
-                    Through Digital Innovation
+         <div class="flex flex-col md:gap-y-8 md:px-0 gap-y-5 px-4">
+            <div class="w-fit gap-x-2 px-4 py-2 small-badge flex flex-row bg-[#2D6CDF]/10 border-2 border-[#2D6CDF]/30 px-2 items-center rounded-full">
+                <a href="#">
+                    <p class="md:text-base text-base whitespace-nowrap overflow-hidden font-semibold text-[#2D6CDF]">
+                        Empowering Digital Transformation
+                    </p>
+                </a>          
+            </div>
+            <!-- <div class="gap-y-4 flex gap-y-2 flex-col">
+                <h1 class="lg:text-4xl text-xl lg:w-[600px] md:w-[300px] w-[300px] md:leading-loose text-[#184C88] font-bold">
+                    Empowering Your Business <br>
+                    with Smart IoT
                 </h1>
                 <p class="lg:text-lg lg:leading-loose md:text-basee text-sm md:leading-loose leading-loose lg:w-[550px] md:w-[350px] text-justify text-gray-500">
                     We are committed to exploring new technological frontiers with our clients through innovative solutions and customer-focused services. 
                     From back-end development to product design, we're here to bring your vision to life.
                 </p>
+            </div> -->
+            <div class="flex flex-col gap-y-2">
+                <h1 class="font-bold text-[#0A3D91] lg:text-4xl md:text-xl text-2xl lg:leading-[1.5] leading-[1.5]">
+                    Empowering Your Business<br/> 
+                    with Smart IoT For Growth
+                </h1>
+                <p class="text-[#64748B] text-justify lg:text-base md:text-base lg:w-[507px] md:w-[290px] text-base w-[340px]">
+                    We are committed to exploring new technological frontiers with our clients through innovative solutions and customer-focused services.
+                    From back-end development to product design, we're here to bring your vision to life.
+                </p>
             </div>
-            <div class="w-fit gap-x-2 px-3 py-2 small-badge flex flex-row bg-white border-2 border-[#407DBD] px-2 items-center rounded-full">
-                <a href="#">
-                    <p class="md:text-basee sm:text-sm text-xs whitespace-nowrap overflow-hidden font-semibold text-[#184C88]">
-                        Everything You Need to Create a Solution
-                    </p>
-                </a>          
-            </div>
+            <a href="#" class="hidden lg:inline-block">
+              <div class="flex flex-row gap-2 items-center border-2 border-[#2D6CDF] w-[208px] py-4 px-2 rounded-lg text-[#475569] font-medium hover:text-[#2D6CDF] active:scale-95 transition-colors duration-500 hover:bg-blue-100">
+                <button>Scroll to learn more</button>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+                <path fill-rule="evenodd" d="M12 2.25a.75.75 0 0 1 .75.75v16.19l6.22-6.22a.75.75 0 1 1 1.06 1.06l-7.5 7.5a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 1 1 1.06-1.06l6.22 6.22V3a.75.75 0 0 1 .75-.75Z" clip-rule="evenodd" />
+                </svg>
+            </div>  
+            </a>
          </div>
          <div class="flex md:flex-row py-6 px-4 items-center md:mt-0 mt-4 md:ml-10">
             <img src="./public/image/photo/qansa-building.png" class="xl:h-[400px] lg:h-[300px] h-[300px]">
          </div>
       </div>
     </section>
+</section>
+
+
 
  <section id="company-logo" class="w-full mx-auto py-12 md:py-20 xl:pt-[130px] pt-0 xl:pb-[150px] md:pb-[100px]">
     <div class="max-w-7xl mx-auto px-4">
