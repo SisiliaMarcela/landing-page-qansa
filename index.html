@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="path/to/your/tailwind.css">
 </head>
 <body class="font-['Poppins']">
-    <div class="flex flex-col md:px-10 px-3 justify-evenly items-center">
-      <nav class="relative flex justify-between xl:w-[1286px] w-full xl:items-center md:items-center md:py-4 ">
+    <div class="flex flex-col md:px-10 md:py-0 py-10 px-3 justify-evenly items-center">
+      <nav class="relative flex justify-between xl:w-[1286px] w-full xl:items-center md:items-center md:py-4">
       <div class="flex items-center justify-evenly">
 		<a href="./index.html">
             <img src="./public/image/logo/qansa.png" width="140" alt="qansa-logo">
@@ -50,7 +50,7 @@
             </li>
         </ul>
 
-        <div id="hamburger-menu" class="lg:hidden transition duration-300 ease-in-out justify-between mt-4">
+        <div id="hamburger-menu" class="md:hidden transition duration-300 ease-in-out items-center justify-between">
 			<button class="navbar-burger flex items-center color-[#184C88] p-3">
 				<svg class="block h-6 w-6 fill-[#184C88]" viewBox="0 0 20 20" mlns="http://www.w3.org/2000/svg">
 					<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
@@ -58,8 +58,8 @@
 			</button>
 		</div>
              <a href="#contact" class="hidden lg:inline-block">
-                <div class="flex flex-row gap-2 items-center border-2 border-[#2D6CDF] py-3 px-8 rounded-lg text-[#475569] font-medium hover:text-[#2D6CDF] active:scale-95 transition-colors duration-500 hover:bg-blue-100">
-                    <span>Contact ↗</span>
+                <div class="flex flex-row gap-2 items-center border-2 border-[#2D6CDF] py-2 px-8 rounded-lg text-[#475569] font-medium hover:text-[#2D6CDF] active:scale-95 transition-colors duration-500 hover:bg-blue-100">
+                    <span>Contact</span>
                 </div>  
                 </span>
             </a>
@@ -105,21 +105,21 @@
 
     <section class="bg-gradient-to-b from-white to-[#f0f9ff] md:py-12">
     <section class="hero max-w-7xl mx-auto py- xl:px-0 md:px-12">
-      <div class="flex md:flex-row flex-col md:items-center justify-between">
+        <div class="flex flex-col xl:flex xl:flex-row xl:items-center xl:justify-between md:flex md:flex-row md:items-center">
          <div class="flex flex-col md:gap-y-8 md:px-0 gap-y-5 py-6 px-4">
-            <div class="w-fit gap-x-2 px-4 py-2 small-badge flex flex-row border-2 border-[#2D6CDF]/30  px-2 items-center rounded-full">
+            <div class="w-fit gap-x-2 px-4 py-2 small-badge flex flex-row border-2 border-[#2D6CDF]/30 px-2 items-center rounded-full">
                 <a href="#">
                     <p class="md:text-base text-base whitespace-nowrap overflow-hidden font-semibold text-[#2D6CDF]">
                         Empowering Digital Transformation
                     </p>
                 </a>          
             </div>
-            <div class="flex flex-col gap-y-2 w-[700px]">
-                <h1 class="font-bold text-[#0A3D91] lg:text-5xl md:text-xl text-2xl lg:leading-[1.5] leading-[1.5]">
+            <div class="flex flex-col gap-y-2 w-[350px] xl:flex xl:flex-col xl:gap-y-2 xl:w-[670px] lg:w-[570px] md:flex md:flex-col md:w-[370px]">
+                <h1 class="font-bold text-[#0A3D91] xl:text-5xl lg:text-4xl md:text-2xl text-2xl xl:leading-[1.5] leading-[1.5]">
                     Empowering Your Business<br/> 
                     with <span class="text-[#2D6CDF]">Smart IoT</span> For Growth
                 </h1>
-                <p class="text-[#64748B] text-justify lg:text-base md:text-base lg:w-[670px] md:w-[290px] text-base w-[340px]">
+                <p class="text-gray-500 text-justify xl:text-lg xl:leading-loose md:text-lg xl:w-[670px] lg:w-[500px] md:w-[320px] md:leading-loose text-base w-[340px]">
                     We are committed to exploring new technological frontiers with our clients through innovative solutions and customer-focused services.
                     From back-end development to product design, we're here to bring your vision to life.
                 </p>
@@ -133,9 +133,9 @@
             </div>  
             </a>
          </div>
-         <div class="flex md:flex-row items-center md:ml-10">
-            <img src="./public/image/thumbnail/hero3.png" alt="hero picture" class="w-[570px] mt-8">
-         </div>
+            <div class="flex items-center">
+                <img src="./public/image/thumbnail/hero3.png" alt="hero picture" class="w-[270px] mt-6 ml-10 md:w-[390px] md:ml-0 xl:w-[500px]"> 
+            </div>
       </div>
     </section>
 </section>
@@ -323,7 +323,7 @@
                         </div>  
                     </a>
                     <div class="flex flex-row gap-3">
-                        <img src="./public/image/photo/pakindra.png" class="rounded-full border-2 border-[#2D6CDF]/50" width="60" alt="indra prasetya">
+                        <img src="./public/image/photo/indra.png" class="rounded-full border-2 border-[#2D6CDF]/50" width="60" alt="indra prasetya">
                         <div class="flex flex-col gap-2">
                             <h5 class="text-base text-[#2D6CDF] font-medium">Indra Prasetya</h5>
                             <p class="text-gray-500">Founder</p>
@@ -538,7 +538,7 @@
     </div>
 </section>
 
-<section class="w-full bg-[#F8FAFC] py-20 px-6">
+<section id="faq" class="w-full bg-[#F8FAFC] py-20 px-6">
     <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div class="lg:col-span-4">
             <h2 class="text-3xl font-bold text-[#0A3D91] mb-4">
@@ -733,7 +733,7 @@
                         <path fill-rule="evenodd" d="M13.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L11.69 12 4.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
                         <path fill-rule="evenodd" d="M19.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06L17.69 12l-6.97-6.97a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
                     </svg> 
-                    <a href="#" class="hover:text-white hover:translate-x-1 transition-all inline-block">Our Projects</a>
+                    <a href="#portfolio" class="hover:text-white hover:translate-x-1 transition-all inline-block">Our Projects</a>
                 </li>
                 <li class="flex flex-row items-center gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="size-4">
@@ -767,7 +767,7 @@
                         <path fill-rule="evenodd" d="M13.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L11.69 12 4.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
                         <path fill-rule="evenodd" d="M19.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06L17.69 12l-6.97-6.97a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
                     </svg> 
-                    <a href="#" class="hover:text-white hover:translate-x-1 transition-all inline-block">FAQs</a>
+                    <a href="#faq" class="hover:text-white hover:translate-x-1 transition-all inline-block">FAQs</a>
                 </li>
                 <li class="flex flex-row items-center gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="size-4">
@@ -820,7 +820,6 @@
         &copy; 2025 PT. Qansa Solusi Indonesia. All rights reserved.
     </div>
 </footer>
-</section>
 
     <button type="button" data-twe-ripple-init data-twe-ripple-color="light" style="position: fixed; bottom: 1.25rem; right: 1.25rem; display: none; border-radius: 9999px; background-color: #184C88; padding: 0.75rem; font-size: 0.75rem; font-weight: 500; text-transform: uppercase; line-height: 1.25; color: #ffffff; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); transition-property: all; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 300ms; cursor: pointer; border: none;"
       id="btn-back-to-top" onmouseover="this.style.boxShadow = '0 10px 15px -3px rgba(73, 32, 229, 0.4), 0 4px 6px -2px rgba(73, 32, 229, 0.2)'"
